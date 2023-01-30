@@ -1,4 +1,5 @@
-@import "./variables"
+$mainColor: #1EACC7
+$secondColor: #ff5656
 
 *
     font-family: 'Roboto', sans-serif
@@ -127,7 +128,7 @@ nav
     width: 113px
     height: 113px
     border-radius: 50%
-    background-color: #$mainColor
+    background-color: $mainColor
     margin-right: 26px
     margin-top: 10px
     padding-top: 20px
@@ -153,7 +154,10 @@ nav
     height: 864px
     width: 100%
     padding-top: 48px
-    padding-bot: 77px
+    padding-bottom: 77px
+    &_wraper
+        margin: 0 auto
+        width: 1000px
     &_mod
         margin-bottom: 32px
     &_title
@@ -170,6 +174,7 @@ nav
         width: 320px
         height: 280px
         padding-top: 88px
+        margin: 0 auto
         margin-bottom: 19px
         position: relative
         &_1
@@ -192,6 +197,8 @@ nav
             color: #FFFFFF
         &_plus
             display: flex
+            justify-content: center
+            align-items: center
             position: absolute
             width: 26px
             height: 26px
@@ -202,3 +209,42 @@ nav
             transform: translateX(-50%)
             padding: 6px
             cursor: pointer
+
+.choice
+    &_backgroundUp
+        padding: 57px
+        background-color: black
+        height: 499px
+        &_white_mod
+            background-color: white
+            color: black
+        &_title
+            color: #FFFFFF
+            text-align: center
+            font-weight: 700
+            font-size: 38px
+            margin-top: 26px
+        &_subtitle
+            font-weight: 400
+            font-size: 17px
+            color: #FFFFFF
+            text-align: center
+
+    &_backgroundDown
+        background: url("../img/mobile_bg.jpg") center center/cover no-repeat
+        height: 397px
+        position: relative
+        &_car
+            position: absolute
+            text-align: center
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 184px
+        &_descr
+            position: absolute
+            text-align: center
+            width: 327px
+            height: 49px
+            bottom: 137px
+            left: 50%
+            transform: translateX(-50%)
